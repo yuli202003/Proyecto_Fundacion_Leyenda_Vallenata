@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página no encontrada | Festival de la Leyenda Vallenata</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#212529">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 1.5rem;
+      background: #212529;
+      color: #ffffff;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 32rem;
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      font-family: Rockwell, Georgia, serif;
+      font-size: 2.25rem;
+      line-height: 1.1;
+    }
+
+    p {
+      margin: 0 0 1.75rem;
+      color: #ced4da;
+    }
+
+    a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #dc3545;
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 0.2rem;
+    }
+
+    a:hover {
+      background: #b02a37;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #8fc8f4;
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>No encontramos esta página</h1>
+    <p>El enlace puede estar incompleto o la página ya no existe. Vuelve al inicio para ver las votaciones del prototipo.</p>
+    <a id="home-link" href="/">Ir al inicio</a>
+  </main>
+  <script>
+    const isProjectPage = location.hostname.endsWith("github.io");
+    document.querySelector("#home-link").href = isProjectPage ? `/${location.pathname.split("/")[1]}/` : "/";
+  </script>
+</body>
+</html>

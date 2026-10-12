@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingresar | Festival de la Leyenda Vallenata</title>
+  <meta name="description" content="Ingresa con tu cuenta para votar.">
+  <meta name="theme-color" content="#212529">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/img/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/alfa-slab-one.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body data-root="./" data-area="public" data-page="sign-in">
+  <div data-slot="header"></div>
+  <main id="main">
+    <section class="page-banner on-stage" aria-labelledby="page-title">
+      <div class="container">
+        <h1 class="page-banner__title" id="page-title">Ingresar</h1>
+      </div>
+    </section>
+    <div class="container container--narrow auth-form">
+      <section class="demo-access" aria-labelledby="demo-title">
+        <h2 class="demo-access__title" id="demo-title">Probar el prototipo</h2>
+        <p>Entra con una cuenta de demostración. Los datos se guardan solo en este navegador.</p>
+        <div class="cluster">
+          <button class="button" type="button" data-demo-account data-email="votante@ejemplo.co" data-password="Votante2027">Entrar como votante</button>
+          <button class="button button--outline" type="button" data-demo-account data-email="admin@ejemplo.co" data-password="Admin2027">Entrar como administración</button>
+        </div>
+        <dl class="demo-access__accounts">
+          <div><dt>Votante</dt><dd>votante@ejemplo.co, contraseña Votante2027</dd></div>
+          <div><dt>Administración</dt><dd>admin@ejemplo.co, contraseña Admin2027</dd></div>
+        </dl>
+      </section>
+
+      <h2 class="auth-form__heading">Ingresar con correo</h2>
+      <div id="form-alert" aria-live="assertive"></div>
+      <form id="sign-in-form" class="form-grid" novalidate>
+        <div class="field" data-field="email">
+          <label class="field__label" for="email">Correo electrónico</label>
+          <input class="input" id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="email-error">
+          <p class="field__error" id="email-error" hidden></p>
+        </div>
+        <div class="field" data-field="password">
+          <label class="field__label" for="password">Contraseña</label>
+          <input class="input" id="password" name="password" type="password" autocomplete="current-password" required aria-describedby="password-error">
+          <p class="field__error" id="password-error" hidden></p>
+        </div>
+        <div class="form-actions">
+          <button class="button" type="submit">Ingresar</button>
+        </div>
+      </form>
+
+      <p class="auth-form__alt">¿Aún no tienes cuenta? <a href="sign-up.html">Crear cuenta</a></p>
+    </div>
+  </main>
+  <div data-slot="footer"></div>
+  <script type="module" src="assets/js/pages/sign-in.js"></script>
+</body>
+</html>

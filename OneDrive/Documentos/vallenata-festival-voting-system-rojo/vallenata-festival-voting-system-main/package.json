@@ -1,0 +1,16 @@
+{
+  "name": "vallenata-festival-voting-system",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Interactive front-end prototype of a configurable public voting platform for the 60th Vallenata Legend Festival.",
+  "type": "module",
+  "scripts": {
+    "start": "npx --yes serve . -l 8080",
+    "lint": "eslint assets/js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "eslint": "^9.39.5",
+    "globals": "^17.13.0"
+  }
+}

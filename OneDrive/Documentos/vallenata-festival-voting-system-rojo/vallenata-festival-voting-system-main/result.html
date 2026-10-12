@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resultados | Festival de la Leyenda Vallenata</title>
+  <meta name="description" content="Comprobante de tu voto y resultados de la votación.">
+  <meta name="theme-color" content="#212529">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/img/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/alfa-slab-one.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body data-root="./" data-area="public" data-page="polls">
+  <div data-slot="header"></div>
+  <main id="main">
+    <section class="page-banner on-stage" id="flow-banner" aria-label="Encabezado del resultado"></section>
+    <div id="result-content"></div>
+  </main>
+  <div data-slot="footer"></div>
+  <script type="module" src="assets/js/pages/result.js"></script>
+</body>
+</html>
